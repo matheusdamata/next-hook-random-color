@@ -13,7 +13,13 @@ export default function Home() {
 
       <Container>
         <ButtonContainer>
-          <button style={{ background: color }} onClick={changeColor}>
+          <button
+            style={{
+              background: color,
+              color: color === '#ffffff' ? 'black' : 'white',
+            }}
+            onClick={changeColor}
+          >
             Change Color
           </button>
         </ButtonContainer>
